@@ -1,0 +1,4 @@
+#!/bin/bash
+cd initramfs
+find | grep -v packme | cpio -o -H newc > ../initramfs.cpio
+cd ..
